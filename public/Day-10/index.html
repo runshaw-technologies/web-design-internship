@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        input.ng-invalid{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div ng-app="" ng-init="names=['abc','def','ghi']">
+        <ul>
+            <li ng-repeat=" q in names ">
+                {{ q }}
+            </li>
+        </ul>
+    </div> -->
+
+    <!-- Custom Directive -->
+    <!-- <test-directive></test-directive>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.directive("TestDirective", function(){
+            return {
+                template: "<h1>Welcome</h1>"
+            };
+        });
+    </script> -->
+
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        Name: <input ng-model="name">
+        <h1>You Entered: {{name}}</h1>
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.name = "Test User";
+        });
+    </script> -->
+
+    <!-- Form Data Validation -->
+    <!-- <form ng-app="" name="myForm" ng-init="myText='user@example.com'">
+        Email: 
+        <input type="email" name="myEmail" ng-model="myText" required>
+        <span ng-show="myForm.myEmail.$error.email">Not a valid email id.</span>
+        <p>Valid: {{myForm.myEmail.$valid}} <br>
+        Dirty: {{myForm.myEmail.$dirty}}<br>
+        Touched: {{myForm.myEmail.$touched}}</p>
+    </form> -->
+
+    <!-- CSS Style -->
+    <form ng-app="">
+        Name: 
+        <input type="text" name="myName" ng-model="myText" required>
+    </form>
+
+
+</body>
+</html>
