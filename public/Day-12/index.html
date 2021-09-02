@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body ng-app="myApp">
+    <!-- Routing -->
+
+    <p><a href="#/!">Main</a></p>
+
+    <a href="#!red">Red</a><br>
+    <a href="#!green">Green</a><br>
+    <a href="#!blue">Blue</a>
+
+    <div ng-view></div>
+
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/", {
+                templateUrl : "main.html"
+            })
+            .when("/red", {
+                templateUrl : "red.html"
+            })
+            .when("/green", {
+                templateUrl : "contact.html"
+            })
+            .when("/blue", {
+                templateUrl : "blue.html"
+            });
+        });
+    </script>
+
+</body>
+</html>
