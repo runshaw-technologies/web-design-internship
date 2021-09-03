@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+    <form method="post" id="register-form">
+        <div>
+            <label for="">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <button type="submit">Register!</button>
+        </div>
+    </form>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyA7SmRlREGSBfOhiQrzG3W4zk325a0MhiU",
+            authDomain: "web-internship-a12d1.firebaseapp.com",
+            projectId: "web-internship-a12d1",
+            storageBucket: "web-internship-a12d1.appspot.com",
+            messagingSenderId: "232217537119",
+            appId: "1:232217537119:web:7344e89466118402c089ea"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+    </script>
+    <script src="register.js"></script>
+</body>
+</html>
