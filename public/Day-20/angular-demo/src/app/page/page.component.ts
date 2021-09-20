@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ContentService } from '../shared/services/content.service';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',

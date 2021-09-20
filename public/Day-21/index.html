@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#demo").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p class="demo">Text onclicked will let the line to disappear.</p>
+    <p id="demo">Second line to disappear</p>
+    <p>Third line to disappear</p>
+</body>
+</html>
+
+
+
+
+<!-- HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities -->
+
+<!-- Working of jQuery -->
+<!-- select (query) HTML elements and perform "actions" on them -->
+
+<!-- jQuery Syntax -->
+<!-- $(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+
+<!-- Examples -->
+<!-- $(this).hide() - hides the current element. -->
+
+<!-- $("p").hide() - hides all <p> elements. -->
+
+<!-- $(".test").hide() - hides all elements with class="test". -->
+
+<!-- $("#test").hide() - hides the element with id="test". -->
+
+
+<!-- 
+$(document).ready(function(){
+    <!-- jQuery Method -->
+<!-- });  -->
